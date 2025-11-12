@@ -58,7 +58,7 @@ Chat App is a modern Flutter-based messaging platform that allows users to regis
 
 ![app_view1](assets/images/view1.png)
 
-![app_view2](assets/images/view3.png)
+![app_view2](assets/images/view2.png)
 
 ![app_view3](assets/images/view3.png)
 
