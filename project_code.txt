@@ -1,0 +1,1281 @@
+===== D:\Android\kick_lance_project\chat_app\analysis_options.yaml =====
+# This file configures the analyzer, which statically analyzes Dart code to
+# check for errors, warnings, and lints.
+#
+# The issues identified by the analyzer are surfaced in the UI of Dart-enabled
+# IDEs (https://dart.dev/tools#ides-and-editors). The analyzer can also be
+# invoked from the command line by running `flutter analyze`.
+
+# The following line activates a set of recommended lints for Flutter apps,
+# packages, and plugins designed to encourage good coding practices.
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  # The lint rules applied to this project can be customized in the
+  # section below to disable rules from the `package:flutter_lints/flutter.yaml`
+  # included above or to enable additional rules. A list of all available lints
+  # and their documentation is published at https://dart.dev/lints.
+  #
+  # Instead of disabling a lint rule for the entire project in the
+  # section below, it can also be suppressed for a single line of code
+  # or a specific dart file by using the `// ignore: name_of_lint` and
+  # `// ignore_for_file: name_of_lint` syntax on the line or in the file
+  # producing the lint.
+  rules:
+    # avoid_print: false  # Uncomment to disable the `avoid_print` rule
+    # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
+===== D:\Android\kick_lance_project\chat_app\firebase.json =====
+{"flutter":{"platforms":{"android":{"default":{"projectId":"chat-app-fire-b5c4c","appId":"1:1044913677198:android:d303c3423dcfaea43e7adf","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"chat-app-fire-b5c4c","configurations":{"android":"1:1044913677198:android:d303c3423dcfaea43e7adf","ios":"1:1044913677198:ios:1c2311c186c2dc233e7adf","macos":"1:1044913677198:ios:1c2311c186c2dc233e7adf","web":"1:1044913677198:web:3945ce86905e9bf13e7adf","windows":"1:1044913677198:web:b86b38ca44c3ca1d3e7adf"}}}}}}
+===== D:\Android\kick_lance_project\chat_app\pubspec.yaml =====
+name: chat_app
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  firebase_auth: ^6.1.1
+  firebase_core: ^4.2.0
+  cloud_firestore: ^6.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
+===== D:\Android\kick_lance_project\chat_app\.idea\modules.xml =====
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/chat_app.iml" filepath="$PROJECT_DIR$/chat_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/chat_app_android.iml" filepath="$PROJECT_DIR$/android/chat_app_android.iml" />
+    </modules>
+  </component>
+</project>
+===== D:\Android\kick_lance_project\chat_app\.idea\workspace.xml =====
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="main.dart" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/main.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="ToolWindowManager">
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <option name="show-excluded-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="dart.analysis.tool.window.force.activate" value="true" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+</project>
+===== D:\Android\kick_lance_project\chat_app\.idea\libraries\Dart_SDK.xml =====
+<component name="libraryTable">
+  <library name="Dart SDK">
+    <CLASSES>
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/async" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/collection" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/convert" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/core" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/developer" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/html" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/io" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/isolate" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/math" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/mirrors" />
+      <root url="file://C:\dart/bin/cache/dart-sdk/lib/typed_data" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
+===== D:\Android\kick_lance_project\chat_app\.idea\libraries\KotlinJavaRuntime.xml =====
+<component name="libraryTable">
+  <library name="KotlinJavaRuntime">
+    <CLASSES>
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-reflect.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-test.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-reflect-sources.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
+===== D:\Android\kick_lance_project\chat_app\.idea\runConfigurations\main_dart.xml =====
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+    <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+    <method />
+  </configuration>
+</component>
+===== D:\Android\kick_lance_project\chat_app\android\app\google-services.json =====
+{
+  "project_info": {
+    "project_number": "1044913677198",
+    "project_id": "chat-app-fire-b5c4c",
+    "storage_bucket": "chat-app-fire-b5c4c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044913677198:android:d303c3423dcfaea43e7adf",
+        "android_client_info": {
+          "package_name": "com.example.chat_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQSe6O3-bv9lK05r7MIctnMdb6NEqGKRw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+===== D:\Android\kick_lance_project\chat_app\android\app\src\debug\AndroidManifest.xml =====
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The INTERNET permission is required for development. Specifically,
+         the Flutter tool needs it to communicate with the running application
+         to allow setting breakpoints, to provide hot reload, etc.
+    -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>
+===== D:\Android\kick_lance_project\chat_app\android\app\src\main\AndroidManifest.xml =====
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:label="chat_app"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI. -->
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+    </application>
+    <!-- Required to query activities that can process text, see:
+         https://developer.android.com/training/package-visibility and
+         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+
+         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+    </queries>
+</manifest>
+===== D:\Android\kick_lance_project\chat_app\android\app\src\main\res\drawable\launch_background.xml =====
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modify this file to customize your launch splash screen -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:color/white" />
+
+    <!-- You can insert your own image assets here -->
+    <!-- <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@mipmap/launch_image" />
+    </item> -->
+</layer-list>
+===== D:\Android\kick_lance_project\chat_app\android\app\src\main\res\drawable-v21\launch_background.xml =====
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modify this file to customize your launch splash screen -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="?android:colorBackground" />
+
+    <!-- You can insert your own image assets here -->
+    <!-- <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@mipmap/launch_image" />
+    </item> -->
+</layer-list>
+===== D:\Android\kick_lance_project\chat_app\android\app\src\main\res\values\styles.xml =====
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme applied to the Android Window while the process is starting when the OS's Dark Mode setting is off -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- Show a splash screen on the activity. Automatically removed when
+             the Flutter engine draws its first frame -->
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+    <!-- Theme applied to the Android Window as soon as the process has started.
+         This theme determines the color of the Android Window while your
+         Flutter UI initializes, as well as behind your Flutter UI while its
+         running.
+
+         This Theme is only used starting with V2 of Flutter's Android embedding. -->
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">?android:colorBackground</item>
+    </style>
+</resources>
+===== D:\Android\kick_lance_project\chat_app\android\app\src\main\res\values-night\styles.xml =====
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme applied to the Android Window while the process is starting when the OS's Dark Mode setting is on -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <!-- Show a splash screen on the activity. Automatically removed when
+             the Flutter engine draws its first frame -->
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+    <!-- Theme applied to the Android Window as soon as the process has started.
+         This theme determines the color of the Android Window while your
+         Flutter UI initializes, as well as behind your Flutter UI while its
+         running.
+
+         This Theme is only used starting with V2 of Flutter's Android embedding. -->
+    <style name="NormalTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">?android:colorBackground</item>
+    </style>
+</resources>
+===== D:\Android\kick_lance_project\chat_app\android\app\src\profile\AndroidManifest.xml =====
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The INTERNET permission is required for development. Specifically,
+         the Flutter tool needs it to communicate with the running application
+         to allow setting breakpoints, to provide hot reload, etc.
+    -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>
+===== D:\Android\kick_lance_project\chat_app\ios\Runner\Assets.xcassets\AppIcon.appiconset\Contents.json =====
+{
+  "images" : [
+    {
+      "size" : "20x20",
+      "idiom" : "iphone",
+      "filename" : "Icon-App-20x20@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "20x20",
+      "idiom" : "iphone",
+      "filename" : "Icon-App-20x20@3x.png",
+      "scale" : "3x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "Icon-App-29x29@1x.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "Icon-App-29x29@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "Icon-App-29x29@3x.png",
+      "scale" : "3x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "Icon-App-40x40@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "Icon-App-40x40@3x.png",
+      "scale" : "3x"
+    },
+    {
+      "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "Icon-App-60x60@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "Icon-App-60x60@3x.png",
+      "scale" : "3x"
+    },
+    {
+      "size" : "20x20",
+      "idiom" : "ipad",
+      "filename" : "Icon-App-20x20@1x.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "20x20",
+      "idiom" : "ipad",
+      "filename" : "Icon-App-20x20@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "Icon-App-29x29@1x.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "Icon-App-29x29@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "Icon-App-40x40@1x.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "Icon-App-40x40@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "Icon-App-76x76@1x.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "Icon-App-76x76@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "83.5x83.5",
+      "idiom" : "ipad",
+      "filename" : "Icon-App-83.5x83.5@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "1024x1024",
+      "idiom" : "ios-marketing",
+      "filename" : "Icon-App-1024x1024@1x.png",
+      "scale" : "1x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
+===== D:\Android\kick_lance_project\chat_app\ios\Runner\Assets.xcassets\LaunchImage.imageset\Contents.json =====
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "LaunchImage.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "LaunchImage@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "LaunchImage@3x.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
+===== D:\Android\kick_lance_project\chat_app\lib\firebase_options.dart =====
+// File generated by FlutterFire CLI.
+// ignore_for_file: type=lint
+import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
+import 'package:flutter/foundation.dart'
+    show defaultTargetPlatform, kIsWeb, TargetPlatform;
+
+/// Default [FirebaseOptions] for use with your Firebase apps.
+///
+/// Example:
+/// ```dart
+/// import 'firebase_options.dart';
+/// // ...
+/// await Firebase.initializeApp(
+///   options: DefaultFirebaseOptions.currentPlatform,
+/// );
+/// ```
+class DefaultFirebaseOptions {
+  static FirebaseOptions get currentPlatform {
+    if (kIsWeb) {
+      return web;
+    }
+    switch (defaultTargetPlatform) {
+      case TargetPlatform.android:
+        return android;
+      case TargetPlatform.iOS:
+        return ios;
+      case TargetPlatform.macOS:
+        return macos;
+      case TargetPlatform.windows:
+        return windows;
+      case TargetPlatform.linux:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for linux - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
+      default:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions are not supported for this platform.',
+        );
+    }
+  }
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyBx-NfNypy2LD-Wch0m_QAG3CNjenNLaW4',
+    appId: '1:1044913677198:web:3945ce86905e9bf13e7adf',
+    messagingSenderId: '1044913677198',
+    projectId: 'chat-app-fire-b5c4c',
+    authDomain: 'chat-app-fire-b5c4c.firebaseapp.com',
+    storageBucket: 'chat-app-fire-b5c4c.firebasestorage.app',
+    measurementId: 'G-6YFEH27HZG',
+  );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyCQSe6O3-bv9lK05r7MIctnMdb6NEqGKRw',
+    appId: '1:1044913677198:android:d303c3423dcfaea43e7adf',
+    messagingSenderId: '1044913677198',
+    projectId: 'chat-app-fire-b5c4c',
+    storageBucket: 'chat-app-fire-b5c4c.firebasestorage.app',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyDwEeD3oYM-1jZr-8yj00yiryy_4J6zbtQ',
+    appId: '1:1044913677198:ios:1c2311c186c2dc233e7adf',
+    messagingSenderId: '1044913677198',
+    projectId: 'chat-app-fire-b5c4c',
+    storageBucket: 'chat-app-fire-b5c4c.firebasestorage.app',
+    iosBundleId: 'com.example.chatApp',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyDwEeD3oYM-1jZr-8yj00yiryy_4J6zbtQ',
+    appId: '1:1044913677198:ios:1c2311c186c2dc233e7adf',
+    messagingSenderId: '1044913677198',
+    projectId: 'chat-app-fire-b5c4c',
+    storageBucket: 'chat-app-fire-b5c4c.firebasestorage.app',
+    iosBundleId: 'com.example.chatApp',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyBx-NfNypy2LD-Wch0m_QAG3CNjenNLaW4',
+    appId: '1:1044913677198:web:b86b38ca44c3ca1d3e7adf',
+    messagingSenderId: '1044913677198',
+    projectId: 'chat-app-fire-b5c4c',
+    authDomain: 'chat-app-fire-b5c4c.firebaseapp.com',
+    storageBucket: 'chat-app-fire-b5c4c.firebasestorage.app',
+    measurementId: 'G-SXP41KBHV0',
+  );
+}
+===== D:\Android\kick_lance_project\chat_app\lib\main.dart =====
+import 'package:chat_app/screens/Auth/login_screen.dart';
+import 'package:chat_app/screens/Auth/signup_screen.dart';
+import 'package:chat_app/screens/chat/chat_screen.dart';
+import 'package:chat_app/screens/welcome_screen.dart';
+import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Chat App',
+      home: WelcomeScreen(),
+      routes: {
+        WelcomeScreen.id: (context) => WelcomeScreen(),
+        LoginScreen.id: (context) => LoginScreen(),
+        SignupScreen.id: (context) => SignupScreen(),
+        ChatScreen.id: (context) => ChatScreen(),
+      },
+    );
+  }
+}
+===== D:\Android\kick_lance_project\chat_app\lib\screens\welcome_screen.dart =====
+import 'package:chat_app/screens/Auth/login_screen.dart';
+import 'package:chat_app/screens/Auth/signup_screen.dart';
+import 'package:chat_app/widgets/custom_primary_button.dart';
+import 'package:flutter/material.dart';
+
+class WelcomeScreen extends StatelessWidget {
+  static String id = "welcomeScreen";
+  const WelcomeScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            spacing: 16,
+            children: [
+              Image.asset("assets/images/chat.png", width: 100, height: 100),
+              Text(
+                "Let's Chat",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(height: 16),
+              CustomPrimaryButton(
+                title: "Login",
+                btnColor: Colors.lightBlueAccent,
+                txtColor: Colors.white,
+                fontSize: 18,
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LoginScreen()),
+                ),
+              ),
+              CustomPrimaryButton(
+                title: "Signup",
+                btnColor: Colors.greenAccent,
+                txtColor: Colors.white,
+                fontSize: 18,
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SignupScreen()),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+===== D:\Android\kick_lance_project\chat_app\lib\screens\Auth\login_screen.dart =====
+import 'package:chat_app/screens/chat/chat_screen.dart';
+import 'package:chat_app/widgets/custom_primary_button.dart';
+import 'package:chat_app/widgets/custom_txt_field.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+
+class LoginScreen extends StatelessWidget {
+  static String id = "/loginScreen";
+  const LoginScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final TextEditingController emailController = TextEditingController();
+    final TextEditingController passwordController = TextEditingController();
+    final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+    final _auth = FirebaseAuth.instance;
+
+    return Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Form(
+            key: _formKey,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              spacing: 24,
+              children: [
+                Image.asset("assets/images/chat.png", width: 100, height: 100),
+                Text(
+                  "Login",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
+                ),
+                CustomTxtField(
+                  hintTxt: "Email",
+                  borderColor: Colors.lightBlueAccent,
+                  controller: emailController,
+                ),
+                CustomTxtField(
+                  hintTxt: "Password",
+                  borderColor: Colors.lightBlueAccent,
+                  controller: passwordController,
+                ),
+                SizedBox(height: 4),
+                CustomPrimaryButton(
+                  title: "Login",
+                  btnColor: Colors.lightBlueAccent,
+                  txtColor: Colors.white,
+                  fontSize: 18,
+                  onTap: () async {
+                    try {
+                      final user = await _auth.signInWithEmailAndPassword(
+                        email: emailController.text,
+                        password: passwordController.text,
+                      );
+                      if (user != null) {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ChatScreen()),
+                        );
+                      }
+                    } catch (e) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text("Invalied Credintional"),
+                          backgroundColor: Colors.red,
+                        ),
+                      );
+                    }
+                  },
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+===== D:\Android\kick_lance_project\chat_app\lib\screens\Auth\signup_screen.dart =====
+import 'package:chat_app/screens/chat/chat_screen.dart';
+import 'package:chat_app/widgets/custom_primary_button.dart';
+import 'package:chat_app/widgets/custom_txt_field.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+
+class SignupScreen extends StatelessWidget {
+  static String id = "/signupScreen";
+  const SignupScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final _auth = FirebaseAuth.instance;
+    final TextEditingController emailController = TextEditingController();
+    final TextEditingController passwordController = TextEditingController();
+    final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+
+    return Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Form(
+            key: _formKey,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              spacing: 24,
+              children: [
+                Image.asset("assets/images/chat.png", width: 100, height: 100),
+                Text(
+                  "Signup",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
+                ),
+                CustomTxtField(
+                  hintTxt: "Email",
+                  borderColor: Colors.greenAccent,
+                  controller: emailController,
+                  keyboardType: TextInputType.emailAddress,
+                ),
+                CustomTxtField(
+                  hintTxt: "Password",
+                  borderColor: Colors.greenAccent,
+                  controller: passwordController,
+                  isPassword: true,
+                ),
+                SizedBox(height: 4),
+                CustomPrimaryButton(
+                  title: "SignUp",
+                  btnColor: Colors.greenAccent,
+                  txtColor: Colors.white,
+                  fontSize: 18,
+                  onTap: () async {
+                    try {
+                      final newUser = await _auth
+                          .createUserWithEmailAndPassword(
+                            email: emailController.text,
+                            password: passwordController.text,
+                          );
+                      Navigator.pushNamed(context, ChatScreen.id);
+                    } catch (error) {
+                      print(error.toString());
+                    }
+                  },
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+===== D:\Android\kick_lance_project\chat_app\lib\screens\chat\chat_screen.dart =====
+import 'package:chat_app/widgets/messages_stream.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+class ChatScreen extends StatefulWidget {
+  static String id = "/chatScreen";
+  const ChatScreen({super.key});
+
+  @override
+  State<ChatScreen> createState() => _ChatScreenState();
+}
+
+class _ChatScreenState extends State<ChatScreen> {
+  final _auth = FirebaseAuth.instance;
+  final _db = FirebaseFirestore.instance;
+  late User signedUser;
+  final TextEditingController msgController = TextEditingController();
+  final String collectionName = "messages";
+
+  void getCred() {
+    try {
+      final user = _auth.currentUser;
+      if (user != null) {
+        signedUser = user;
+        print(signedUser.email);
+      }
+    } catch (e) {
+      print(e.toString());
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getCred();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.greenAccent,
+        centerTitle: true,
+        automaticallyImplyLeading: false,
+        title: Row(
+          spacing: 12,
+          children: [
+            Image.asset("assets/images/chat.png", width: 32, height: 32),
+            Text("Let's Chat", style: TextStyle(fontWeight: FontWeight.bold)),
+          ],
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {
+              _auth.signOut();
+              Navigator.pop(context);
+            },
+            icon: Icon(Icons.logout, color: Colors.red),
+          ),
+        ],
+      ),
+      body: Column(
+        children: [
+          // Spacer(),
+          MessagesStream(),
+          Divider(color: Colors.greenAccent, thickness: 2),
+          TextField(
+            controller: msgController,
+            decoration: InputDecoration(
+              contentPadding: EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 12,
+              ),
+              enabledBorder: InputBorder.none,
+              hintText: "Type your message here..",
+              suffixIcon: IconButton(
+                onPressed: () {
+                  try {
+                    _db.collection(collectionName).add({
+                      "text": msgController.text,
+                      "sender": signedUser.email,
+                      "time" : FieldValue.serverTimestamp(),
+                    });
+                    msgController.clear();
+                  } catch (e) {
+                    ScaffoldMessenger.of(
+                      context,
+                    ).showSnackBar(SnackBar(content: Text(e.toString())));
+                  }
+                },
+                icon: Icon(Icons.send, color: Colors.lightBlueAccent),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+===== D:\Android\kick_lance_project\chat_app\lib\widgets\custom_primary_button.dart =====
+import 'package:flutter/material.dart';
+
+class CustomPrimaryButton extends StatelessWidget {
+  final String title;
+  final Color btnColor;
+  final Color txtColor;
+  final double fontSize;
+  final Function() onTap;
+  const CustomPrimaryButton({
+    super.key,
+    required this.title,
+    required this.btnColor,
+    required this.txtColor,
+    required this.fontSize,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: 8),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(24),
+          color: btnColor,
+        ),
+        child: Text(
+          title,
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            color: txtColor,
+            fontSize: fontSize,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+    );
+  }
+}
+===== D:\Android\kick_lance_project\chat_app\lib\widgets\custom_txt_field.dart =====
+import 'package:flutter/material.dart';
+
+class CustomTxtField extends StatelessWidget {
+  final String hintTxt;
+  final Color borderColor;
+  final TextEditingController controller;
+  final bool? isPassword;
+  final TextInputType? keyboardType;
+  const CustomTxtField({
+    super.key,
+    required this.hintTxt,
+    required this.borderColor,
+    required this.controller,
+    this.isPassword,
+    this.keyboardType,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      controller: controller,
+      obscureText: isPassword ?? false,
+      keyboardType: keyboardType,
+      decoration: InputDecoration(
+        contentPadding: EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+        enabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: borderColor),
+          borderRadius: BorderRadius.circular(14),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: borderColor),
+          borderRadius: BorderRadius.circular(14),
+        ),
+        hintText: hintTxt,
+      ),
+    );
+  }
+}
+===== D:\Android\kick_lance_project\chat_app\lib\widgets\message_widget.dart =====
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+
+class MessageWidget extends StatelessWidget {
+  final String text;
+  final String sender;
+  const MessageWidget({super.key, required this.text, required this.sender});
+
+  @override
+  Widget build(BuildContext context) {
+    final _auth = FirebaseAuth.instance;
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: _auth.currentUser!.email == sender
+          ? CrossAxisAlignment.end
+          : CrossAxisAlignment.start,
+      children: [
+        Container(
+          margin: EdgeInsets.only(bottom: 0, top: 12, left: 12, right: 12),
+          child: Text(
+            sender,
+            style: TextStyle(
+              color: _auth.currentUser!.email == sender
+                  ? Colors.greenAccent
+                  : Colors.lightBlueAccent,
+              fontSize: 12,
+            ),
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.only(bottom: 12, top: 12, left: 12, right: 12),
+          padding: EdgeInsets.all(12),
+          decoration: BoxDecoration(
+            color: Colors.grey[200],
+            borderRadius: BorderRadius.only(
+              topLeft: _auth.currentUser!.email == sender
+                  ? Radius.circular(16)
+                  : Radius.circular(0),
+              topRight: _auth.currentUser!.email == sender
+                  ? Radius.circular(0)
+                  : Radius.circular(16),
+              bottomLeft: Radius.circular(16),
+              bottomRight: Radius.circular(16),
+            ),
+            border: Border.all(
+              color: _auth.currentUser!.email == sender
+                  ? Colors.greenAccent
+                  : Colors.lightBlueAccent,
+            ),
+          ),
+          child: Text(text, style: TextStyle(fontSize: 16)),
+        ),
+      ],
+    );
+  }
+}
+===== D:\Android\kick_lance_project\chat_app\lib\widgets\messages_stream.dart =====
+import 'package:chat_app/widgets/message_widget.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
+
+class MessagesStream extends StatefulWidget {
+  const MessagesStream({super.key});
+
+  @override
+  State<MessagesStream> createState() => _MessagesStreamState();
+}
+
+class _MessagesStreamState extends State<MessagesStream> {
+  final _db = FirebaseFirestore.instance;
+  final String collectionName = "messages";
+  final ScrollController _scrollController = ScrollController();
+
+  void _scrollToBottom() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (_scrollController.hasClients) {
+        _scrollController.jumpTo(_scrollController.position.maxScrollExtent);
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return StreamBuilder(
+      stream: _db
+          .collection(collectionName)
+          .orderBy("time", descending: false)
+          .snapshots(),
+      builder: (context, snapshot) {
+        if (!snapshot.hasData) {
+          return Center(
+            child: Text("no Data", style: TextStyle(color: Colors.grey)),
+          );
+        } else if (snapshot.connectionState == ConnectionState.waiting) {
+          return Center(child: CircularProgressIndicator());
+        }
+        final List<QueryDocumentSnapshot<Map<String, dynamic>>> messages =
+            snapshot.data!.docs;
+        _scrollToBottom();
+        return Expanded(
+          child: ListView.builder(
+            controller: _scrollController,
+            itemCount: snapshot.data!.docs.length,
+            itemBuilder: (context, index) {
+              return MessageWidget(
+                text: messages[index].data()['text'],
+                sender: messages[index].data()['sender'],
+              );
+            },
+          ),
+        );
+      },
+    );
+  }
+}
+===== D:\Android\kick_lance_project\chat_app\macos\Runner\Assets.xcassets\AppIcon.appiconset\Contents.json =====
+{
+  "images" : [
+    {
+      "size" : "16x16",
+      "idiom" : "mac",
+      "filename" : "app_icon_16.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "16x16",
+      "idiom" : "mac",
+      "filename" : "app_icon_32.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "32x32",
+      "idiom" : "mac",
+      "filename" : "app_icon_32.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "32x32",
+      "idiom" : "mac",
+      "filename" : "app_icon_64.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "128x128",
+      "idiom" : "mac",
+      "filename" : "app_icon_128.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "128x128",
+      "idiom" : "mac",
+      "filename" : "app_icon_256.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "256x256",
+      "idiom" : "mac",
+      "filename" : "app_icon_256.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "256x256",
+      "idiom" : "mac",
+      "filename" : "app_icon_512.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "app_icon_512.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "app_icon_1024.png",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
+===== D:\Android\kick_lance_project\chat_app\test\widget_test.dart =====
+// This is a basic Flutter widget test.
+//
+// To perform an interaction with a widget in your test, use the WidgetTester
+// utility in the flutter_test package. For example, you can send tap and scroll
+// gestures. You can also use WidgetTester to find child widgets in the widget
+// tree, read text, and verify that the values of widget properties are correct.
+
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+
+import 'package:chat_app/main.dart';
+
+void main() {
+  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+    // Build our app and trigger a frame.
+    await tester.pumpWidget(const MyApp());
+
+    // Verify that our counter starts at 0.
+    expect(find.text('0'), findsOneWidget);
+    expect(find.text('1'), findsNothing);
+
+    // Tap the '+' icon and trigger a frame.
+    await tester.tap(find.byIcon(Icons.add));
+    await tester.pump();
+
+    // Verify that our counter has incremented.
+    expect(find.text('0'), findsNothing);
+    expect(find.text('1'), findsOneWidget);
+  });
+}
+===== D:\Android\kick_lance_project\chat_app\web\manifest.json =====
+{
+    "name": "chat_app",
+    "short_name": "chat_app",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "A new Flutter project.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
