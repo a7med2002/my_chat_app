@@ -64,6 +64,14 @@ Chat App is a modern Flutter-based messaging platform that allows users to regis
 
 ---
 
+## 📦 Download APK  
+
+You can download the latest version of the **Chat App** APK directly from Google Drive:  
+
+👉 [**Download Chat App (APK)**](https://drive.google.com/file/d/1CPLAd2hprzHhStE3YhAU6WxUo7W5YPB5/view?usp=sharing)  
+
+---
+
 ## 🌐 Social Links
 - 👨‍💻 Developer: [ِAhmed Meqdad]
 - 📧 Email: [ahmd2002mqdad@gamil.com]
